@@ -1,0 +1,38 @@
+.about
+    display: grid
+    grid-template-columns: 33% 67%
+    gap: 2rem
+    animation: appear 0.5s
+    position: relative
+    .photo
+        .myFace
+            z-index: 0
+            border: solid #2863e4 5px
+            padding: 3rem 1rem
+            box-shadow: 10px 10px 100px black
+            transform: rotate(-0.02turn)
+            width: 100%
+            img
+                width: 100%
+        .title
+            padding: 0.3rem
+            color: white
+            background: #2863e4
+            width: fit-content
+            font-size: 3rem
+            transform: rotate(0.01turn)
+
+    .description
+        width: 80%
+        margin: 0 auto
+        text-align: justify
+        font-size: 2rem
+        word-wrap: break-word
+        p
+            margin-bottom: 2rem
+
+@keyframes appear
+    0%
+        scale: 0
+    100%
+        scale: 1
