@@ -1,0 +1,30 @@
+.experience
+    display: grid
+    grid-template-columns: 33% 67%
+    gap: 2rem
+    animation: appear 0.75s
+    position: relative
+
+    .myExperience
+        width: 80%
+        margin: 0 auto
+        text-align: justify
+        font-size: 2rem
+        word-wrap: break-word
+        ul
+            li
+                margin-bottom: 2rem
+                padding-bottom: 0.5rem
+                border-bottom: solid #2863e4 2px
+                span
+                    display: block
+                .place
+                    font-size: 1.33rem
+
+@keyframes appear
+    0%
+        left: 1333px
+        top: 1000px
+    100%
+        left: 0
+        top: 0

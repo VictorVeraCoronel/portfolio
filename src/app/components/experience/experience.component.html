@@ -1,1 +1,31 @@
-<p>experience works!</p>
+@if (english) {
+    <article class="experience">
+
+        <app-card title="EXPERIENCE" photo="images/experience.png"/>
+    
+        <section class="myExperience">
+            <ul>
+                <li>
+                    <span class="theExperience">Layout designer.</span>
+                    <span class="place">Soporttec S.L.</span>
+                </li>
+    
+            </ul>
+        </section>
+    </article>
+}@else if(spanish){
+    <article class="experience">
+
+        <app-card title="EXPERIENCIA" photo="images/experience.png"/>
+    
+        <section class="myExperience">
+            <ul>
+                <li>
+                    <span class="theExperience">Maquetador web.</span>
+                    <span class="place">Soporttec S.L.</span>
+                </li>
+    
+            </ul>
+        </section>
+    </article>
+}

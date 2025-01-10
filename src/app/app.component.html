@@ -5,8 +5,10 @@
     <app-nav />
   </nav>
 
-  <main [@routeTransition]="getRouteAnimationData()" class="main">
+  <main class="main">
     <router-outlet></router-outlet>
   </main>
+
+  <app-language-selector></app-language-selector>
 
 </div>

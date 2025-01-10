@@ -1,26 +1,9 @@
 .about
     display: grid
-    grid-template-columns: 33% 67%
+    grid-template-columns: 30% 70%
     gap: 2rem
-    animation: appear 0.5s
+    animation: appear 0.75s
     position: relative
-    .photo
-        .myFace
-            z-index: 0
-            border: solid #2863e4 5px
-            padding: 3rem 1rem
-            box-shadow: 10px 10px 100px black
-            transform: rotate(-0.02turn)
-            width: 100%
-            img
-                width: 100%
-        .title
-            padding: 0.3rem
-            color: white
-            background: #2863e4
-            width: fit-content
-            font-size: 3rem
-            transform: rotate(0.01turn)
 
     .description
         width: 80%
@@ -33,6 +16,10 @@
 
 @keyframes appear
     0%
+
         scale: 0
+        transform: rotate(-90deg)
     100%
+        transform: rotate(0deg)
+
         scale: 1

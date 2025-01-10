@@ -1,0 +1,88 @@
+.projects
+    display: grid
+    grid-template-columns: 33% 67%
+    gap: 2rem
+    animation: appear 0.75s
+    position: relative
+
+    .myProjects
+        padding: 1rem
+        width: 80%
+        margin: 0 auto
+        text-align: justify
+        font-size: 2rem
+        word-wrap: break-word
+        overflow: auto
+        max-height: 70vh
+        ul
+            
+            a
+                text-decoration: none
+                color: black
+            li
+                transition: all ease 0.33s
+                list-style: none
+                margin-bottom: 2rem
+                padding-bottom: 0.5rem
+                border-bottom: solid #2863e4 2px
+                border: solid #2863e4 2px
+                padding: 1rem
+                span
+                    display: block
+                .description
+                    font-size: 1.33rem
+                &:hover
+                    color: white
+                    background: #2863e4
+                    .tags
+                        span
+                            color: #2863e4
+                            border: solid white 2px
+                            border-radius: 1rem
+                            padding: 0.33rem
+                            background: white
+                .tags
+                    display: flex
+                    gap: 1rem
+                    margin: 1rem 0 0 0
+                    span
+                        transition: all ease 0.33s
+                        color: white
+                        display: inline
+                        font-size: 1.2rem
+                        border: solid #2863e4 2px
+                        border-radius: 1rem
+                        padding: 0.33rem
+                        background: #2863e4
+
+@keyframes appear
+    0%
+        left: 1000px
+        scale: 0
+        transform: rotate(360deg)
+    100%
+        left: 0
+        scale: 1
+        transform: rotate(0)
+
+
+/* width */
+::-webkit-scrollbar 
+  width: 10px
+  
+
+
+/* Track */
+::-webkit-scrollbar-track 
+  background: #f1f1f1
+
+
+/* Handle */
+::-webkit-scrollbar-thumb 
+  background: #2863e4
+  border-radius: 10px
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+  background: #2863e4

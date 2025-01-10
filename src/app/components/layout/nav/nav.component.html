@@ -1,6 +1,15 @@
-<nav class="nav">
-    <a routerLink="about">ABOUT ME</a>
-    <a routerLink="studies">STUDIES</a>
-    <a routerLink="experience">EXPERIENCE</a>
-    <a routerLink="projects">PROJECTS</a>
-</nav>
+@if(english){
+    <nav class="nav">
+        <a routerLink="about" routerLinkActive="active">ABOUT ME</a>
+        <a routerLink="studies" routerLinkActive="active">STUDIES</a>
+        <a routerLink="experience" routerLinkActive="active">EXPERIENCE</a>
+        <a routerLink="projects" routerLinkActive="active">PROJECTS</a>
+    </nav>
+}@else if(spanish){
+    <nav class="nav">
+        <a routerLink="about" routerLinkActive="active">SOBRE MI</a>
+        <a routerLink="studies" routerLinkActive="active">ESTUDIOS</a>
+        <a routerLink="experience" routerLinkActive="active">EXPERIENCIA</a>
+        <a routerLink="projects" routerLinkActive="active">PROYECTOS</a>
+    </nav>
+}

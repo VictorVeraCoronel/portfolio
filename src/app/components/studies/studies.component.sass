@@ -1,0 +1,28 @@
+.studies
+    display: grid
+    grid-template-columns: 33% 67%
+    gap: 2rem
+    animation: appear 0.75s
+    position: relative
+
+    .myStudies
+        width: 80%
+        margin: 0 auto
+        text-align: justify
+        font-size: 2rem
+        word-wrap: break-word
+        ul
+            li
+                margin-bottom: 2rem
+                padding-bottom: 0.5rem
+                border-bottom: solid #2863e4 2px
+                span
+                    display: block
+                .place
+                    font-size: 1.33rem
+
+@keyframes appear
+    0%
+        top: 1333px
+    100%
+        top: 0

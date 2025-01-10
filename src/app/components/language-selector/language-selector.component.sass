@@ -1,0 +1,30 @@
+.languageSelector
+    position: fixed
+    bottom: 2rem
+    left: 1.5rem
+    border-radius: 10px
+    display: flex
+    gap: 1rem
+    background: #2863e4
+    width: fit-content
+    padding: 1rem
+    .english, .spanish
+      
+        .image
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #2863e4
+            border: none
+            font-size: 2rem
+            color: white
+            width: 100px
+            height: 100px
+            border-radius: 100%
+            overflow: hidden
+            img
+                width: 160%
+                object-fit: fill
+                transition: all ease 0.33s
+                &:hover
+                    scale: 110%
