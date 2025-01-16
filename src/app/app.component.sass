@@ -8,3 +8,23 @@
         gap: 1rem
     .main
         padding: 5rem
+
+
+@import 'variables'
+@media (width<$lg)
+    .container
+        display: grid
+        grid-template-columns: auto
+        .leftNav
+            position: sticky
+            top: 0
+            padding: 0
+            margin-bottom: 1rem
+            justify-content: center
+            gap: 0
+        .main
+            z-index: -1
+            padding: 0rem
+
+        app-language-selector
+            display: none

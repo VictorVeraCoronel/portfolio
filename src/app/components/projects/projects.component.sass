@@ -15,7 +15,7 @@
         overflow: auto
         max-height: 70vh
         ul
-            
+
             a
                 text-decoration: none
                 color: black
@@ -65,24 +65,18 @@
         scale: 1
         transform: rotate(0)
 
-
-/* width */
-::-webkit-scrollbar 
-  width: 10px
-  
-
-
-/* Track */
-::-webkit-scrollbar-track 
-  background: #f1f1f1
-
-
-/* Handle */
-::-webkit-scrollbar-thumb 
-  background: #2863e4
-  border-radius: 10px
+@import 'variables'
+@media (width<$lg)
+    .projects
+        grid-template-columns: auto
+        overflow: auto
+        
+        padding: 0
+        .myProjects
+            padding: 0
+            text-align: left
+            overflow: none
+            width: 90%
+            max-height: fit-content
 
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover 
-  background: #2863e4

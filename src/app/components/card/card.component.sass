@@ -15,3 +15,29 @@
         width: fit-content
         font-size: 3rem
         transform: rotate(0.01turn)
+
+@import 'variables'
+@media (width<$lg)
+    .card
+        width: 90%
+        margin: 0 auto
+        .photo
+            z-index: 0
+            border: solid #2863e4 5px
+            padding: 0
+            box-shadow: none
+            transform: rotate(0)
+            width: 100%
+            margin: 0 auto
+            img
+                object-fit: cover
+                width: 100%
+        .title
+            padding: 0.3rem
+            color: white
+            background: #2863e4
+            width: 100%
+            margin: 0 auto
+            font-size: 3rem
+            text-align: center
+            transform: rotate(0)

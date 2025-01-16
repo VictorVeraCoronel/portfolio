@@ -4,6 +4,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { KnowledgeComponent } from './components/knowledge/knowledge.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { StudiesComponent } from './components/studies/studies.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 export const routes: Routes = [
     {
@@ -27,7 +28,7 @@ export const routes: Routes = [
     },
 
     {
-        path: "knowledge",
-        component: KnowledgeComponent,
+        path: "contact",
+        component: ContactComponent,
     }
 ];
