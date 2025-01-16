@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { ActivatedRoute, RouterModule, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { NavComponent } from './components/layout/nav/nav.component';
@@ -20,8 +20,12 @@ export class AppComponent {
   title = 'portfolio';
   @ViewChild(LanguageSelectorComponent) languageSelector !: LanguageSelectorComponent
 
-  constructor(private route:ActivatedRoute){
+  constructor(private route:ActivatedRoute, private router:Router){
     
+  }
+
+  ngOnInit(){
+    this.router.navigate(['about'])
   }
 
 
