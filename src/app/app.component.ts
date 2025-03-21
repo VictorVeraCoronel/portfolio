@@ -17,7 +17,6 @@ import { LanguageSelectorComponent } from "./components/language-selector/langua
   ]
 })
 export class AppComponent {
-  title = 'portfolio';
   @ViewChild(LanguageSelectorComponent) languageSelector !: LanguageSelectorComponent
 
   constructor(private route:ActivatedRoute, private router:Router){
