@@ -24,8 +24,8 @@
                 list-style: none
                 margin-bottom: 2rem
                 padding-bottom: 0.5rem
-                border-bottom: solid #2863e4 2px
-                border: solid #2863e4 2px
+                border-bottom: solid #222020 2px
+                border: solid #222020 2px
                 padding: 1rem
                 span
                     display: block
@@ -33,10 +33,10 @@
                     font-size: 1.33rem
                 &:hover
                     color: white
-                    background: #2863e4
+                    background: #222020
                     .tags
                         span
-                            color: #2863e4
+                            color: #222020
                             border: solid white 2px
                             border-radius: 1rem
                             padding: 0.33rem
@@ -50,20 +50,18 @@
                         color: white
                         display: inline
                         font-size: 1.2rem
-                        border: solid #2863e4 2px
+                        border: solid #222020 2px
                         border-radius: 1rem
                         padding: 0.33rem
-                        background: #2863e4
+                        background: #222020
 
 @keyframes appear
     0%
-        left: 1000px
-        scale: 0
-        transform: rotate(360deg)
+        opacity: 0
+        scale: 0.6
     100%
-        left: 0
+        opacity: 1
         scale: 1
-        transform: rotate(0)
 
 @import 'variables'
 @media (width<$lg)
