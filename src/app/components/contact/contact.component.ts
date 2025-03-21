@@ -12,8 +12,10 @@ import { CookieService } from 'ngx-cookie-service';
 export class ContactComponent {
   public spanish: boolean = false
   public english: boolean = true
-  public email: string = 'victorveracoronel@outlook.es'
+  public email: string = 'victorveracoronel@live.com'
   public phone: string = '628780562'
+  public linkedin: string = 'https://www.linkedin.com/in/victorveracoronel/'
+  public github: string = 'https://github.com/VictorVeraCoronel'
 
   constructor(private cookieService: CookieService) {
 

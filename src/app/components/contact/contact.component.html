@@ -1,21 +1,26 @@
 @if(english){
-    <article class="contact">
+<article class="contact">
 
-        <app-card title="CONTACT" photo="images/location.png"/>
-    
-        <section class="description">
-            <p>E-mail: {{email}}</p>
-            <p>Phone: {{phone}}</p>
-        </section>
-    </article>
+    <app-card title="CONTACT" photo="images/location.png" />
+
+    <section class="description">
+        <p>E-mail: {{email}}</p>
+        <p>Phone: {{phone}}</p>
+        <p>Linkedin: <a target="_blank" href="{{linkedin}}">VictorVeraCoronel</a></p>
+        <p>Github: <a target="_blank" href="{{github}}">VictorVeraCoronel</a></p>
+    </section>
+</article>
 }@else if(spanish){
-    <article class="contact">
+<article class="contact">
 
-        <app-card title="CONTACTO" photo="images/location.png"/>
-    
-        <section class="description">
-            <p>E-mail: {{email}}</p>
-            <p>Teléfono: {{phone}}</p>
-        </section>
-    </article>
+    <app-card title="CONTACTO" photo="images/location.png" />
+
+    <section class="description">
+        <p>E-mail: {{email}}</p>
+        <p>Teléfono: {{phone}}</p>
+        <p>Linkedin: <a target="_blank" href="{{linkedin}}">VictorVeraCoronel</a></p>
+        <p>Github: <a target="_blank" href="{{github}}">VictorVeraCoronel</a></p>
+
+    </section>
+</article>
 }
